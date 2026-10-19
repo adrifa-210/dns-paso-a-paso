@@ -1,0 +1,13 @@
+;
+; 57.168.192
+;
+$TTL 86400
+@ IN SOA debian.adrian.test. admin.adrian.test. (
+  2026101901 ; Serial (AñoMesDiaVersion)
+  3600       ; Refresh
+  1800       ; Retry
+  604800     ; Expire
+  86400 )    ; Negative Cache TTL
+;
+@ IN NS debian.adrian.test.
+10 IN PTR debian.adrian.test.
