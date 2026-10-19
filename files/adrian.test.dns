@@ -3,11 +3,14 @@
 ;
 $TTL 86400
 @ IN SOA debian.adrian.test. admin.adrian.test. (
-  2026101901 ; Serial (AñoMesDiaVersion)
+  2026101902 ; Serial (AñoMesDiaVersion)
   3600       ; Refresh
   1800       ; Retry
   604800     ; Expire
   86400 )    ; Negative Cache TTL
 ;
-@ IN NS debian.adrian.test.
-debian.adrian.test. IN A 192.168.57.10
+@   IN NS   debian.adrian.test.
+@   IN TXT  "Adrian Fernandez"
+
+debian.adrian.test. IN A     192.168.57.10
+web                 IN CNAME debian.adrian.test.
